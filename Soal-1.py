@@ -1,16 +1,21 @@
-namakontak = []
+
+
+
+
+nama = []
 notelepon = []
 
-def daftarkontak(): 
+def datakontak(): 
     print("Daftar Kontak :")
-    for i in range(len(namakontak)):
-        print("Nama : {}".format(namakontak[i]))
-        print("No Telepon : {}".format(notelepon[i]))
+    for x in range(len(nama)):
+        print("Nama : {}".format(nama[x]))
+        print("No Telepon : {}".format(notelepon[x]))
         
 def tambahkontak(): 
-    namakontak.append(input("Nama :"))
-    notelepon.append(int(input("No Telepon :")))
+    nama.append(input("Nama :"))
+    notelepon.append (int(input("No Telepon :")))
     print("Kontak berhasil ditambahkan")
+  
 
 print("Selamat datang!")
 while True:
@@ -20,11 +25,12 @@ while True:
     print("3. Keluar")
     menu = int(input("Pilih Menu :"))
     if menu == 1:
-        daftarkontak()
+        datakontak()
     elif menu == 2:
-        tambahKontak()
+        tambahkontak()
     elif menu == 3:
-        print("Program selesai, sampai jumpa!")
+        print("Program selesai, sampai jumpa kembali!")
         break
     else:
         print("Menu tidak tersedia")
+    
